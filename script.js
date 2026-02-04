@@ -23,3 +23,28 @@ jQuery(document).ready(function () {
     });
 
 });
+
+let currentSlide = 0;
+function moveSlide(direction) {
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    slides[currentSlide].classList.remove('active');
+    slides[currentSlide].classList.add(direction > 0 ? 'prev-slide' : '');
+
+    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+
+    slides.forEach((slide, index) => {
+        if (index !== currentSlide) {
+            slide.classList.remove('active');
+            if (direction > 0 && index < currentSlide) {
+                slide.classList.add('prev-slide');
+            } else {
+                slide.classList.remove('prev-slide');
+            }
+        }
+    });
+
+    slides[currentSlide].classList.add('active');
+    slides[currentSlide].classList.remove('prev-slide');
+}
