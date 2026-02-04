@@ -1,0 +1,3058 @@
+/* CSS Used from: https://gatchealth.com/reg-a-offering/css/bootstrap.min.css */
+:root {
+    --primary-color: #002b5c;
+    --secondary-color: #8093a8;
+    --accent-color: #00b4d8;
+    --text-color: #333333;
+    --light-bg: #f8f9fa;
+    --white: #ffffff;
+    --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --header-height: 80px;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+h2,
+h4,
+h5 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+b {
+    font-weight: bolder;
+}
+
+small {
+    font-size: 80%;
+}
+
+sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+h2,
+h4,
+h5 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+
+    nav .mega-menu-item {
+        margin: 0;
+    }
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.no-gutters>[class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.col,
+.col-lg-10,
+.col-lg-12,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-md-10,
+.col-md-12,
+.col-md-6,
+.col-md-8,
+.col-sm-10,
+.col-sm-12,
+.col-sm-6,
+.col-sm-8,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.order-1 {
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+.order-2 {
+    -ms-flex-order: 2;
+    order: 2;
+}
+
+@media (min-width: 576px) {
+    .col-sm-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-sm-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+
+    .col-sm-10 {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+
+    .col-sm-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .order-sm-1 {
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
+    .order-sm-2 {
+        -ms-flex-order: 2;
+        order: 2;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-md-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+
+    .col-md-10 {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+
+    .col-md-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .order-md-1 {
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
+    .order-md-2 {
+        -ms-flex-order: 2;
+        order: 2;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-lg-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    .col-lg-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+
+    .col-lg-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-lg-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+
+    .col-lg-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+
+    .col-lg-10 {
+        -ms-flex: 0 0 83.333333%;
+        flex: 0 0 83.333333%;
+        max-width: 83.333333%;
+    }
+
+    .col-lg-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .order-lg-1 {
+        -ms-flex-order: 1;
+        order: 1;
+    }
+
+    .order-lg-2 {
+        -ms-flex-order: 2;
+        order: 2;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-xl-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+
+    .col-xl-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-xl-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+}
+
+.border {
+    border: 1px solid #dee2e6 !important;
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+@media (min-width: 576px) {
+    .d-sm-flex {
+        display: -ms-flexbox !important;
+        display: flex !important;
+    }
+}
+
+.flex-row {
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+}
+
+.justify-content-end {
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+}
+
+.align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.pl-1 {
+    padding-left: 0.25rem !important;
+}
+
+.p-4 {
+    padding: 1.5rem !important;
+}
+
+.m-auto {
+    margin: auto !important;
+}
+
+.mr-auto {
+    margin-right: auto !important;
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+@media print {
+
+    *,
+    ::after,
+    ::before {
+        text-shadow: none !important;
+        box-shadow: none !important;
+    }
+
+    a:not(.btn) {
+        text-decoration: underline;
+    }
+
+    img {
+        page-break-inside: avoid;
+    }
+
+    h2,
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2 {
+        page-break-after: avoid;
+    }
+
+    body {
+        min-width: 992px !important;
+    }
+
+    .container {
+        min-width: 992px !important;
+    }
+}
+
+/*! CSS Used from: https://gatchealth.com/reg-a-offering/css/themify-icons.css */
+[class*=" ti-"] {
+    font-family: "themify";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ti-info:before {
+    content: "\e697";
+}
+
+/*! CSS Used from: https://gatchealth.com/reg-a-offering/revolution/css/layers.css */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.rev_slider {
+    overflow: hidden;
+}
+
+.rev_slider {
+    overflow: hidden;
+}
+
+.rev_slider_wrapper .zeus.tparrows {
+    cursor: pointer;
+    min-width: 50px;
+    min-height: 50px;
+    line-height: 50px;
+    position: absolute;
+    display: block;
+    z-index: 100;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.rev_slider_wrapper .zeus.tparrows:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/*! CSS Used from: https://gatchealth.com/reg-a-offering/revolution/css/settings.css */
+.rev_slider_wrapper {
+    position: relative;
+    z-index: 0;
+}
+
+.rev_slider {
+    position: relative;
+    overflow: visible;
+}
+
+.rev_slider>ul,
+.tp-revslider-mainul>li,
+.rev_slider>ul>li,
+.rev_slider>ul>li:before,
+.tp-revslider-mainul>li:before,
+.tp-simpleresponsive>ul,
+.tp-simpleresponsive>ul>li,
+.tp-simpleresponsive>ul>li:before {
+    list-style: none !important;
+    position: absolute;
+    margin: 0px !important;
+    padding: 0px !important;
+    overflow-x: visible;
+    overflow-y: visible;
+    list-style-type: none !important;
+    background-image: none;
+    background-position: 0px 0px;
+    text-indent: 0em;
+    top: 0px;
+    left: 0px;
+}
+
+.tp-revslider-mainul>li,
+.rev_slider>ul>li,
+.rev_slider>ul>li:before,
+.tp-revslider-mainul>li:before,
+.tp-simpleresponsive>ul>li,
+.tp-simpleresponsive>ul>li:before {
+    visibility: hidden;
+}
+
+.tp-revslider-slidesli,
+.tp-revslider-mainul {
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+}
+
+.rev_slider .tp-caption {
+    position: relative;
+    visibility: hidden;
+    white-space: nowrap;
+    display: block;
+}
+
+.rev_slider .tp-mask-wrap .tp-caption,
+.rev_slider .tp-mask-wrap *:last-child {
+    margin-bottom: 0;
+}
+
+.tp-caption {
+    z-index: 1;
+}
+
+.tp-caption {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    position: absolute;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+.rev_slider_wrapper {
+    width: 100%;
+}
+
+.fullwidthbanner-container {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+}
+
+.fullwidthbanner-container .fullwidthabanner {
+    width: 100%;
+    position: relative;
+}
+
+.tp-bannertimer {
+    visibility: hidden;
+    width: 100%;
+    height: 5px;
+    background: #fff;
+    background: rgba(0, 0, 0, 0.15);
+    position: absolute;
+    z-index: 200;
+    top: 0px;
+}
+
+.tp-bannertimer.tp-bottom {
+    top: auto;
+    bottom: 0px !important;
+    height: 5px;
+}
+
+.tp-loader {
+    top: 50%;
+    left: 50%;
+    z-index: 10000;
+    position: absolute;
+}
+
+.tp-loader.spinner0 {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    background: url(https://gatchealth.com/reg-a-offering/revolution/assets/loader.gif) no-repeat center center;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    margin-top: -20px;
+    margin-left: -20px;
+    -webkit-animation: tp-rotateplane 1.2s infinite ease-in-out;
+    animation: tp-rotateplane 1.2s infinite ease-in-out;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.tp-bannertimer {
+    background: #000;
+    background: rgba(0, 0, 0, 0.15);
+    height: 5px;
+}
+
+.tparrows {
+    cursor: pointer;
+    background: #000;
+    background: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: block;
+    z-index: 1000;
+}
+
+.tparrows:hover {
+    background: #000;
+}
+
+.tparrows:before {
+    font-family: "revicons";
+    font-size: 15px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+.tparrows.tp-leftarrow:before {
+    content: "\e824";
+}
+
+.tparrows.tp-rightarrow:before {
+    content: "\e825";
+}
+
+/*! CSS Used from: https://gatchealth.com/reg-a-offering/css/shortcodes.css */
+.ttm-row {
+    padding: 90px 0;
+}
+
+.ttm-bg {
+    position: relative;
+}
+
+.ttm-bg-layer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.ttm-bg.ttm-bgimage-yes>.ttm-bg-layer {
+    opacity: 0.85;
+}
+
+.layer-content {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-layer {
+    position: relative;
+}
+
+.bg-layer>.container>.row {
+    margin: 0;
+}
+
+.bg-layer>.container>.row>[class*="col-"] {
+    padding: 0;
+}
+
+.section-title {
+    position: relative;
+    /*margin-bottom: 26px;*/
+}
+
+.section-title h5 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 9px;
+    color: #8093a8;
+}
+
+.section-title h2.title {
+    font-weight: 800;
+    font-size: 33px;
+    line-height: 43px;
+    margin-bottom: 0;
+}
+
+.section-title .title-header {
+    position: relative;
+    margin-bottom: 17px;
+}
+
+.section-title.title-style-center_text {
+    text-align: center;
+    /*margin-bottom: 40px;*/
+}
+
+.border {
+    border-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+.ttm-btn {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: normal;
+    padding: 11px 32px 11px 31px;
+    background: transparent;
+    border: 1px solid #eaeff5;
+    position: relative;
+    font-weight: 700;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.5s ease 0s;
+}
+
+.ttm-btn:not(.btn-inline):after {
+    content: "";
+    width: 160%;
+    height: 150px;
+    border-radius: 60%;
+    position: absolute;
+    bottom: 100%;
+    left: -40px;
+    z-index: -1;
+    transition: all 0.4s ease 0s;
+}
+
+.ttm-btn:not(.btn-inline):hover:after {
+    bottom: -50px;
+}
+
+.ttm-btn.ttm-icon-btn-left {
+    padding-left: 44px;
+}
+
+.ttm-btn.ttm-icon-btn-right {
+    padding-right: 44px;
+}
+
+.ttm-btn.ttm-icon-btn-right {
+    padding-right: 22px;
+}
+
+.ttm-btn.ttm-btn-size-md {
+    font-size: 15px;
+    padding: 11px 31px 11px 31px;
+}
+
+.ttm-btn.ttm-btn-shape-rounded {
+    border-radius: 3px;
+}
+
+.ttm-btn.ttm-btn-style-border {
+    background-color: transparent;
+    border: 1px solid currentColor;
+}
+
+.ttm-btn.ttm-btn-color-white.ttm-btn-style-border {
+    color: #fff;
+    border-color: #fff;
+    background-color: transparent;
+}
+
+.ttm-icon {
+    margin-bottom: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid transparent;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    box-sizing: content-box;
+    position: relative;
+}
+
+.ttm-icon i {
+    vertical-align: middle;
+}
+
+.ttm-icon.ttm-icon_element-size-xs {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+}
+
+.ttm-icon.ttm-icon_element-size-sm {
+    height: 66px;
+    width: 66px;
+    line-height: 66px;
+}
+
+.ttm-icon.ttm-icon_element-size-sm i {
+    font-size: 28px;
+}
+
+.ttm-icon.ttm-icon_element-size-lg {
+    height: 88px;
+    width: 88px;
+    line-height: 88px;
+}
+
+.ttm-icon.ttm-icon_element-onlytxt {
+    height: auto;
+    width: auto;
+    line-height: 1;
+}
+
+.ttm-icon.ttm-icon_element-style-round {
+    border-radius: 5px;
+}
+
+.ttm-icon.ttm-icon_element-style-rounded {
+    border-radius: 50%;
+}
+
+.ttm-list.ttm-list-style-icon {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+.ttm-list.ttm-list-style-icon li {
+    position: relative;
+    padding-bottom: 0px;
+    list-style: none;
+}
+
+.ttm-list.ttm-list-style-icon li:last-child {
+    padding-bottom: 0;
+}
+
+.ttm-list.ttm-list-style-icon li i {
+    position: absolute;
+    left: auto;
+    top: 5px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+}
+
+.ttm-list.ttm-list-style-icon li i.fa-minus:before {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 0;
+    height: 2px;
+    width: 7px;
+}
+
+.ttm-list.ttm-list-style-icon .ttm-list-li-content {
+    display: inline-block;
+    padding-left: 20px;
+    font-weight: 500;
+}
+
+.featured-icon-box {
+    position: relative;
+}
+
+.featured-icon-box .ttm-icon {
+    margin-bottom: 0;
+}
+
+.featured-title h5 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.featured-desc p {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 0;
+}
+
+.featured-icon-box.icon-align-before-content .featured-icon,
+.featured-icon-box.icon-align-before-content .featured-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.featured-icon-box.icon-align-before-content .featured-icon i {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.featured-icon-box.icon-align-before-content .featured-content {
+    padding-left: 15px;
+}
+
+.featured-icon-box.icon-align-before-content .featured-content .featured-title h5 {
+    margin-bottom: 2px;
+}
+
+.featured-icon-box.icon-align-top-content .featured-content {
+    margin-top: 18px;
+    position: relative;
+}
+
+.featured-icon-box.icon-align-top-content .featured-title h5 {
+    margin-bottom: 10px;
+}
+
+.container {
+    counter-reset: featuredbox-number;
+}
+
+.featuredbox-number .ttm-num:before {
+    counter-increment: featuredbox-number;
+    content: counter(featuredbox-number, decimal-leading-zero) " ";
+}
+
+.featured-icon-box.icon-align-before-content.style2 {
+    padding: 15px 0 18px;
+}
+
+.featured-icon-box.icon-align-before-content.style2 .featured-icon {
+    vertical-align: top;
+    padding-right: 20px;
+}
+
+.featured-icon-box.icon-align-before-content.style2:last-child {
+    padding-bottom: 0;
+}
+
+.featured-icon-box.icon-align-before-content.style2 .featured-icon .ttm-icon {
+    height: 45px;
+    width: 45px;
+    line-height: 46px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.featured-icon-box.icon-align-before-content.style2 .featured-icon .ttm-icon i {
+    font-size: 15px;
+    font-weight: 800;
+    color: inherit;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.featuredbox-number .featured-icon-box.icon-align-before-content.style2 .featured-icon .ttm-icon:before,
+.featuredbox-number .featured-icon-box.icon-align-before-content.style2 .featured-icon .ttm-icon:after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.06);
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.featuredbox-number .featured-icon-box.icon-align-before-content.style2 .featured-icon .ttm-icon:before {
+    top: -100%;
+}
+
+.featuredbox-number .featured-icon-box.icon-align-before-content.style2:first-child .featured-icon .ttm-icon:before {
+    content: unset;
+}
+
+.featuredbox-number .featured-icon-box.icon-align-before-content.style2:last-child .featured-icon .ttm-icon:after {
+    content: unset;
+}
+
+.featured-icon-box.icon-align-before-content.style3 {
+    padding: 20px;
+}
+
+.featured-icon-box.icon-align-before-content.style3 .featured-title h5 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.featuredbox-number .featured-icon-box.icon-align-before-content.style3:not(:first-child) {
+    margin-top: 10px;
+}
+
+.featuredbox-number .featured-icon-box.icon-align-before-content.style3 .featured-icon .ttm-icon {
+    height: 48px;
+    width: 48px;
+    line-height: 48px;
+}
+
+.featured-imagebox,
+.featured-imagebox .featured-thumbnail {
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-imagebox .featured-content .featured-title h5 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    position: relative;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.featured-imagebox-team .ttm-team-box-view-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-imagebox-team .ttm-team-box-view-overlay:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.featured-imagebox-team:hover .ttm-team-box-view-overlay:after {
+    opacity: 0.4;
+    bottom: 0;
+}
+
+.featured-imagebox-post {
+    margin: 2px 0 10px;
+    transition: all 0.3s ease-in-out;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 43, 92, 0.08);
+    -moz-box-shadow: 0 0 10px 0 rgba(0, 43, 92, 0.08);
+    box-shadow: 0 0 10px 0 rgba(0, 43, 92, 0.08);
+}
+
+.featured-imagebox-post .featured-content.featured-content-post {
+    padding: 20px 25px 27px;
+    background-color: #fff;
+    position: relative;
+}
+
+.featured-imagebox-post .featured-content .featured-title h5 {
+    -webkit-line-clamp: 2;
+}
+
+.featured-imagebox-post:hover {
+    -webkit-box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.09);
+    box-shadow: 0 4px 11px 0 rgba(0, 0, 0, 0.09);
+}
+
+.featured-imagebox-post .featured-thumbnail img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+}
+
+.featured-imagebox-post:hover .featured-thumbnail img {
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.featured-imagebox-post .ttm-post-thumbnail {
+    border: 8px solid rgba(255, 255, 255, 1);
+}
+
+.accordion .toggle:not(:last-child) {
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.accordion .toggle-title a {
+    display: block;
+    font-weight: 500;
+    font-size: 15px;
+    position: relative;
+}
+
+.accordion .toggle-content {
+    display: none;
+    margin-top: 15px;
+}
+
+.accordion .toggle-content p {
+    margin-bottom: 0;
+}
+
+.accordion .toggle .toggle-title a:after {
+    position: absolute;
+    font-family: "FontAwesome";
+    right: 20px;
+    top: 5px;
+    display: inline-block;
+    content: "\f067";
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 10px;
+}
+
+.accordion .toggle.ttm-style-classic {
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    border: 0;
+    position: relative;
+}
+
+.accordion .toggle.ttm-style-classic:last-child {
+    margin-bottom: 0;
+}
+
+.accordion .toggle.ttm-style-classic .toggle-content {
+    padding: 14px 0;
+    margin-top: 0;
+}
+
+.accordion .toggle.ttm-style-classic .toggle-title {
+    border: 1px dashed;
+}
+
+.accordion .toggle.ttm-style-classic .toggle-title a {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 500;
+    background: 0 0;
+    display: block;
+    padding: 13px 20px 12px;
+    padding-right: 48px;
+    position: relative;
+    -webkit-transition: color 0s ease-in-out;
+    -o-transition: color 0s ease-in-out;
+    transition: color 0s ease-in-out;
+}
+
+.accordion .toggle.ttm-style-classic .toggle-title a:after {
+    top: 20px;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.accordion .toggle.ttm-style-classic .toggle-content {
+    display: block;
+    border: 1px solid;
+    border-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.row.ttm-boxes-spacing-15px {
+    margin: 0 -15px;
+}
+
+.ttm-boxes-spacing-15px .ttm-box-col-wrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 0 30px;
+}
+
+/*! CSS Used from: https://gatchealth.com/reg-a-offering/css/main.css */
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+
+a {
+    outline: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+    display: block;
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+*::-moz-selection {
+    background: #2457aa;
+    color: #fff;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #2457aa;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #2457aa;
+    color: #fff;
+    text-shadow: none;
+}
+
+ul {
+    margin: 16px 0;
+    padding: 0 0 0 25px;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #8093a8;
+    background-color: #fff;
+    letter-spacing: 0px;
+}
+
+h2,
+h4,
+h5 {
+    font-family: "Nunito Sans", sans-serif;
+    margin-bottom: 15px;
+    font-weight: 800;
+    color: #002b5c;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 52px;
+}
+
+h4 {
+    font-size: 26px;
+    line-height: 32px;
+}
+
+h5 {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+body .page {
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+body .site-main {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+a {
+    color: #002b5c;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.z-index_1 {
+    /*z-index: -1;*/
+}
+
+.spacing-7 {
+    padding-top: 38px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    margin-top: 70px;
+}
+
+.pr-50 {
+    padding-right: 50px !important;
+}
+
+.pl-50 {
+    padding-left: 50px !important;
+}
+
+.pt-15 {
+    padding-top: 15px !important;
+}
+
+.pt-35 {
+    padding-top: 35px !important;
+}
+
+.pt-45 {
+    padding-top: 45px !important;
+}
+
+.pt-50 {
+    padding-top: 50px !important;
+}
+
+.pt-100 {
+    padding-top: 100px !important;
+}
+
+.pb-10 {
+    padding-bottom: 10px !important;
+}
+
+.pb-25 {
+    padding-bottom: 25px !important;
+}
+
+.pb-40 {
+    padding-bottom: 40px !important;
+}
+
+.pb-50 {
+    padding-bottom: 50px !important;
+}
+
+.pb-100 {
+    padding-bottom: 100px !important;
+}
+
+.mt-15 {
+    margin-top: 15px !important;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mt-30 {
+    margin-top: 30px !important;
+}
+
+.mt-60 {
+    margin-top: 60px !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+.mb-50 {
+    margin-bottom: 50px !important;
+}
+
+.ml-15 {
+    margin-left: 15px !important;
+}
+
+.ttm-bgcolor-darkgrey a:hover,
+.ttm-icon_element-border.ttm-icon_element-color-skincolor,
+.ttm-icon_element-color-skincolor,
+a:hover,
+.ttm-textcolor-white a:hover,
+.site-navigation nav.main-menu {
+    color: #004b8d;
+}
+
+.ttm-icon_element-fill.ttm-icon_element-color-skincolor,
+.ttm-btn.ttm-btn-style-fill.ttm-btn-color-dark:not(.btn-inline):hover:after,
+nav.main-menu ul.menu>li>a:before,
+.menubar-box .menubar-inner,
+.menubar-box .menubar-inner:after,
+.menubar-box .menubar-inner:before,
+.featured-imagebox-post .featured-content.featured-content-post:before {
+    background-color: #004b8d;
+}
+
+.ttm-icon.ttm-icon_element-border.ttm-icon_element-color-skincolor,
+.ttm-btn.ttm-btn-style-fill.ttm-btn-color-dark:hover {
+    border-color: #004b8d;
+}
+
+.ttm-btn.ttm-btn-style-fill.ttm-btn-color-dark:after {
+    border-top-color: #004b8d !important;
+}
+
+.ttm-textcolor-darkgrey,
+.ttm-icon.ttm-icon_element-border.ttm-icon_element-color-darkgrey,
+.ttm-btn.ttm-btn-style-border.ttm-btn-color-dark:hover,
+.ttm-btn.ttm-btn-style-border.ttm-btn-color-white:hover,
+.ttm-bgcolor-darkgrey .ttm-btn.ttm-btn-style-border.ttm-btn-color-white:hover,
+.section-title h2.title,
+.featured-title h5 {
+    color: #002b5c;
+}
+
+.ttm-bgcolor-darkgrey,
+.ttm-bgcolor-darkgrey>.ttm-bg-layer,
+.ttm-btn.ttm-btn-style-fill.ttm-btn-color-dark,
+.ttm-btn.ttm-btn-style-fill.ttm-btn-color-grey:not(.btn-inline):after,
+.ttm-btn.ttm-btn-style-border.ttm-btn-color-dark:not(.btn-inline):after,
+.ttm-btn.ttm-btn-style-fill.ttm-btn-color-grey:hover,
+.ttm-list.ttm-list-style-icon li i.fa-minus:before {
+    background-color: #002b5c;
+}
+
+.ttm-icon.ttm-icon_element-border.ttm-icon_element-color-darkgrey,
+.ttm-btn.ttm-btn-style-fill.ttm-btn-color-dark,
+.ttm-btn.ttm-btn-style-fill.ttm-btn-color-grey:hover {
+    border-color: #002b5c;
+}
+
+.ttm-textcolor-white,
+.ttm-textcolor-white a,
+.ttm-btn-color-white,
+.ttm-textcolor-white h4,
+.ttm-bgcolor-darkgrey h4,
+.ttm-bgcolor-darkgrey a,
+.ttm-bgcolor-darkgrey .row>[class*="col-"] :not(.ttm-bgcolor-white) h4,
+.ttm-bgcolor-darkgrey .row>[class*="col-"] :not(.ttm-bgcolor-white) a,
+.ttm-icon_element-fill.ttm-icon_element-color-skincolor,
+.ttm-btn.ttm-btn-style-fill.ttm-btn-color-grey:hover,
+.ttm-btn.ttm-btn-style-border.ttm-btn-color-dark:hover,
+.ttm-btn.ttm-btn-style-fill.ttm-btn-color-dark {
+    color: #fff;
+}
+
+.ttm-bgcolor-white,
+.ttm-bgcolor-white>.ttm-bg-layer,
+.featured-imagebox-team .ttm-team-box-view-overlay:after,
+.ttm-btn.ttm-btn-style-border.ttm-btn-color-white:not(.btn-inline):after {
+    background-color: #fff;
+}
+
+.ttm-bgcolor-grey,
+.ttm-bgcolor-grey>.ttm-bg-layer,
+.ttm-btn-style-fill.ttm-btn-color-grey,
+.featured-icon-box.icon-align-before-content.style3,
+.ttm-toggle-title-bgcolor-grey .toggle-title {
+    background-color: #f5f9fd;
+}
+
+#preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin: -30px 0 0 -30px;
+}
+
+#status {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    background: #fff;
+    background-image: url(https://gatchealth.com/reg-a-offering/images/preloader-1.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.site-branding {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header_btn a.ttm-btn {
+    display: block;
+    padding: 9px 23px 10px 22px;
+}
+
+.site-navigation {
+    position: relative;
+}
+
+.footer {
+    position: relative;
+    z-index: 1;
+    background-image: url(https://gatchealth.com/reg-a-offering/images/footer-map.png);
+    background-position: center center;
+    background-attachment: scroll;
+}
+
+.copyright {
+    padding-top: 18px;
+    padding-bottom: 14px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#totop {
+    font-weight: 900;
+    color: #fff;
+    display: none;
+    position: fixed;
+    right: 34px;
+    bottom: 50px;
+    z-index: 999;
+    height: 0;
+    width: 0;
+    font-size: 0;
+    text-align: center;
+    padding-top: 3px;
+    line-height: 34px;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+}
+
+.service-box {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 43, 92, 0.08);
+}
+
+.service-box .service-box-img1,
+.service-box .service-box-img2 {
+    z-index: 1;
+    background-color: transparent;
+}
+
+.service-box .service-box-img1 .ttm-bg-layer,
+.service-box .service-box-img2 .ttm-bg-layer {
+    position: absolute;
+    content: "";
+    right: 0;
+    left: auto;
+    top: 0;
+    left: auto;
+    width: 60%;
+    height: 80%;
+    transition: all 0.6s;
+}
+
+.service-box .service-box-img2 .ttm-bg-layer {
+    left: 0;
+    right: auto;
+}
+
+.service-box .service-box-img1:hover .ttm-bg-layer,
+.service-box .service-box-img2:hover .ttm-bg-layer {
+    width: 70%;
+    height: 90%;
+}
+
+/*! CSS Used from: https://gatchealth.com/reg-a-offering/css/megamenu.css */
+nav.main-menu ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+nav.main-menu ul li {
+    position: relative;
+}
+
+nav.main-menu {
+    margin-bottom: 0;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    border: none;
+    z-index: 9;
+}
+
+nav.main-menu ul.menu>li {
+    position: relative;
+    display: inline-block;
+    z-index: 11;
+}
+
+@media (min-width: 1200px) {
+    nav.main-menu ul.menu>li>a {
+        display: block;
+        font-size: 16px;
+        line-height: 15px;
+        font-weight: 700;
+        text-transform: capitalize;
+        padding: 0 25px;
+        position: relative;
+    }
+
+    nav.main-menu ul.menu>li>a:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        transform: scale3d(0, 1, 1);
+        transform-origin: 0% 50%;
+        transition: transform 0.5s;
+        transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    }
+
+    nav.main-menu ul.menu>li:hover>a:before {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@media (max-width: 1199px) {
+    .menubar {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 9;
+    }
+
+    .menubar-box {
+        display: block;
+        width: 30px;
+        height: 24px;
+    }
+
+    .menubar-inner,
+    .menubar-inner:after,
+    .menubar-inner:before {
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        transition-timing-function: ease;
+        transition-duration: 0.15s;
+        transition-property: transform;
+        border-radius: 4px;
+        background-color: #000;
+    }
+
+    .menubar--squeeze .menubar-inner {
+        top: 50%;
+        display: block;
+        margin-top: -2px;
+        transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        transition-duration: 0.1s;
+    }
+
+    .menubar-inner:after,
+    .menubar-inner:before {
+        display: block;
+        content: "";
+    }
+
+    .menubar-inner:after {
+        bottom: -8px;
+    }
+
+    .menubar-inner:before {
+        top: -8px;
+    }
+
+    nav.main-menu {
+        display: none;
+        max-height: 10000px;
+        position: absolute;
+        box-shadow: 0 0 10px 0 rgba(0, 43, 92, 0.08);
+        z-index: 100;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        border-top: 3px solid;
+    }
+
+    nav.main-menu ul.menu,
+    nav.main-menu ul.menu>li {
+        display: block;
+        position: relative;
+    }
+
+    nav.main-menu ul.menu>li>a {
+        display: block;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 15px 15px;
+        line-height: 20px;
+        border-top: solid 1px #e0e0e0;
+        text-align: left;
+    }
+
+    nav.main-menu ul.menu>li:first-child>a {
+        border-top: none;
+    }
+
+    nav.main-menu li.mega-menu-item a.mega-menu-link:after {
+        font-family: "FontAwesome";
+        content: "\f105";
+        float: right;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+}
+
+/*! CSS Used from: https://gatchealth.com/reg-a-offering/css/responsive.css */
+@media only screen and (min-width: 1200px) {
+    .ttm-header-style-01 #site-header-menu .site-navigation ul.menu>li>a {
+        padding: 46px 17px;
+    }
+}
+
+@media all and (max-width: 1199px) {
+    header .container {
+        max-width: 100%;
+    }
+
+    .site-branding {
+        text-align: center;
+    }
+
+    #site-header-menu .site-navigation {
+        height: 80px;
+    }
+
+    .ttm-row .container,
+    footer .container {
+        max-width: 100%;
+    }
+
+    .ttm-row .container,
+    footer .container {
+        padding: 0;
+    }
+
+    .ttm-row .container>.row,
+    footer .container .row {
+        margin: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .featured-imagebox img {
+        display: block;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    h4 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    h5 {
+        font-size: 19px;
+        line-height: 22px;
+    }
+
+    .ttm-row {
+        padding: 60px 0 !important;
+    }
+
+    .spacing-7 {
+        padding: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .res-991-pt-0 {
+        padding-top: 0 !important;
+    }
+
+    .res-991-pt-50 {
+        padding-top: 50px !important;
+    }
+
+    .res-991-pr-30 {
+        padding-right: 30px !important;
+    }
+
+    .res-991-pl-30 {
+        padding-left: 30px !important;
+    }
+
+    .res-991-mt-0 {
+        margin-top: 0 !important;
+    }
+
+    .res-991-mb-0 {
+        margin-bottom: 0 !important;
+    }
+
+    .ttm_single_image-wrapper img {
+        text-align: center;
+        width: 100%;
+    }
+
+    .featured-icon-box.icon-align-before-content .featured-content {
+        padding-left: 10px;
+    }
+
+    .featured-icon-box.icon-align-before-content.style2 .featured-icon {
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-title h2.title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 575px) {
+    .copyright {
+        text-align: center;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+
+    .res-575-ml-0 {
+        margin-left: 0 !important;
+    }
+
+    .border {
+        border: 0px !important;
+    }
+}
+
+/*! CSS Used from: Embedded */
+body {
+    overflow-x: hidden;
+}
+
+#logo-img {
+    max-width: 200px;
+}
+
+.s-icon {
+    width: 50px;
+}
+
+.s-icon2 {
+    width: 35px;
+}
+
+.bg-cta1 {
+    background: url(https://gatchealth.com/reg-a-offering/images/cta/image1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-cta2 {
+    background: url(images/mark_cuban_bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-cta4 {
+    background: url(https://gatchealth.com/reg-a-offering/images/cta/image1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Video Poster styles */
+.video-container {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.video-poster {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.video-container:hover .video-poster {
+    transform: scale(1.02);
+}
+
+.play-button-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68px;
+    height: 48px;
+    background-color: rgba(255, 0, 0, 0.9);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.video-container:hover .play-button-overlay {
+    background-color: #ff0000;
+}
+
+.play-button-overlay::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 18px solid white;
+    margin-left: 5px;
+}
+
+.bg-cta5 {
+    background: url(https://gatchealth.com/reg-a-offering/images/cta/image1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-benefits {
+    background: url(https://gatchealth.com/reg-a-offering/images/body/image7.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-opportunity {
+    background: url(https://gatchealth.com/reg-a-offering/images/body/image8.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.img-shadow {
+    box-shadow: -15px 15px #002b5c;
+    border-radius: 3px;
+}
+
+iframe {
+    min-height: 500px !important;
+}
+
+.ttm-btn:hover {
+    background: #fff !important;
+}
+
+.services-section .img-fluid {
+    max-width: 530px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .img-intro {
+        margin-top: 30%;
+    }
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1199px) {
+    .cta-header {
+        margin-right: 50px;
+        margin-top: 8px;
+    }
+
+    #logo-img {
+        max-width: 130px;
+    }
+
+    #rev_slider_5_1_wrapper {
+        margin-top: 50px;
+    }
+
+    #site-header-menu {
+        /*position: fixed;*/
+        z-index: 999;
+        width: 100%;
+    }
+
+    @media only screen and (max-width: 769px) {
+        .fa-play {
+            line-height: 38px;
+        }
+
+        .header_btn a.ttm-btn {
+            display: block;
+            padding: 10px 5px;
+            font-size: 10px;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .order-b1 {
+        order: 1;
+    }
+
+    .order-b2 {
+        order: 2;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .tp-caption {
+        text-shadow: 0 0 3px #fff;
+    }
+
+    a.tp-caption {
+        text-shadow: none;
+    }
+
+    .img-intro {
+        display: none;
+    }
+
+    h4,
+    h5 {
+        margin-top: 20px;
+    }
+}
+
+.full-image {
+    width: 100%;
+}
+
+.accordion .toggle.ttm-style-classic .toggle-title {
+    border: 1px solid #f1f1f1 !important;
+}
+
+/*! CSS Used keyframes */
+@-webkit-keyframes tp-rotateplane {
+    0% {
+        -webkit-transform: perspective(120px);
+    }
+
+    50% {
+        -webkit-transform: perspective(120px) rotateY(180deg);
+    }
+
+    100% {
+        -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
+    }
+}
+
+@keyframes tp-rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    }
+
+    50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+
+/*! CSS Used fontfaces */
+@font-face {
+    font-family: "themify";
+    src: url("https://gatchealth.com/reg-a-offering/fonts/themify.eot?-fvbane");
+    src: url("https://gatchealth.com/reg-a-offering/fonts/themify.eot#iefix-fvbane") format("embedded-opentype"),
+        url("https://gatchealth.com/reg-a-offering/fonts/themify.woff?-fvbane") format("woff"),
+        url("https://gatchealth.com/reg-a-offering/fonts/themify.ttf?-fvbane") format("truetype"),
+        url("https://gatchealth.com/reg-a-offering/fonts/themify.svg?-fvbane#themify") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "revicons";
+    src: url("https://gatchealth.com/reg-a-offering/revolution/fonts/revicons/revicons90c6.eot?5510888");
+    src: url("https://gatchealth.com/reg-a-offering/revolution/fonts/revicons/revicons90c6.eot?5510888#iefix") format("embedded-opentype"),
+        url("https://manhattanstreetcapital.com/sites/default/files/fonts/gatc/revicons90c6.woff?5510888") format("woff"),
+        url("https://manhattanstreetcapital.com/sites/default/files/fonts/gatc//revicons90c6.ttf?5510888") format("truetype"),
+        url("https://manhattanstreetcapital.com/sites/default/files/fonts/gatc/revicons90c6.svg?5510888#revicons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe0oMImSLYBIv1o4X1M8cce4E9RKdmwp.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe0oMImSLYBIv1o4X1M8cce4E91Kdmwp.woff2) format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe0oMImSLYBIv1o4X1M8cce4E9ZKdmwp.woff2) format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+        U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe0oMImSLYBIv1o4X1M8cce4E9dKdmwp.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+        U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe0oMImSLYBIv1o4X1M8cce4E9lKdg.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+        U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe01MImSLYBIv1o4X1M8cce4GwZuY14IUql-.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe01MImSLYBIv1o4X1M8cce4GwZuY1cIUql-.woff2) format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe01MImSLYBIv1o4X1M8cce4GwZuY1wIUql-.woff2) format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+        U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe01MImSLYBIv1o4X1M8cce4GwZuY10IUql-.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+        U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe01MImSLYBIv1o4X1M8cce4GwZuY1MIUg.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+        U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe01MImSLYBIv1o4X1M8cce4G2JvY14IUql-.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe01MImSLYBIv1o4X1M8cce4G2JvY1cIUql-.woff2) format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe01MImSLYBIv1o4X1M8cce4G2JvY1wIUql-.woff2) format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+        U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe01MImSLYBIv1o4X1M8cce4G2JvY10IUql-.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+        U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe01MImSLYBIv1o4X1M8cce4G2JvY1MIUg.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+        U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe01MImSLYBIv1o4X1M8cce4G35sY14IUql-.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe01MImSLYBIv1o4X1M8cce4G35sY1cIUql-.woff2) format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe01MImSLYBIv1o4X1M8cce4G35sY1wIUql-.woff2) format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+        U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe01MImSLYBIv1o4X1M8cce4G35sY10IUql-.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+        U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe01MImSLYBIv1o4X1M8cce4G35sY1MIUg.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+        U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe01MImSLYBIv1o4X1M8cce4G1ptY14IUql-.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe01MImSLYBIv1o4X1M8cce4G1ptY1cIUql-.woff2) format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe01MImSLYBIv1o4X1M8cce4G1ptY1wIUql-.woff2) format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+        U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe01MImSLYBIv1o4X1M8cce4G1ptY10IUql-.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+        U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: italic;
+    font-weight: 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe01MImSLYBIv1o4X1M8cce4G1ptY1MIUg.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+        U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe0qMImSLYBIv1o4X1M8ccewI9tScg.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe0qMImSLYBIv1o4X1M8cce5I9tScg.woff2) format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe0qMImSLYBIv1o4X1M8cceyI9tScg.woff2) format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+        U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe0qMImSLYBIv1o4X1M8ccezI9tScg.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+        U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe0qMImSLYBIv1o4X1M8cce9I9s.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+        U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc9iB85gU1EQVg.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc9iB85pU1EQVg.woff2) format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc9iB85iU1EQVg.woff2) format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+        U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc9iB85jU1EQVg.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+        U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc9iB85tU1E.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+        U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8GBs5gU1EQVg.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8GBs5pU1EQVg.woff2) format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8GBs5iU1EQVg.woff2) format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+        U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8GBs5jU1EQVg.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+        U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8GBs5tU1E.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+        U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8aBc5gU1EQVg.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8aBc5pU1EQVg.woff2) format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8aBc5iU1EQVg.woff2) format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+        U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8aBc5jU1EQVg.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+        U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8aBc5tU1E.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+        U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8-BM5gU1EQVg.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8-BM5pU1EQVg.woff2) format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8-BM5iU1EQVg.woff2) format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+        U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8-BM5jU1EQVg.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+        U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/nunitosans/v8/pe03MImSLYBIv1o4X1M8cc8-BM5tU1E.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+        U+FEFF, U+FFFD;
+}
+
+/*Extra*/
+.panels-flexible-row-first.clearfix.top-banner-row {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    .rev_slider_wrapper {
+        display: none;
+    }
+
+    .rev-slidebg {
+        opacity: 0.5;
+    }
+}
+
+.field--name-body .page {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #8093a8;
+    background-color: #fff;
+    letter-spacing: 0px;
+}
+
+.field--name-body .page section p {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #8093a8;
+}
+
+@media (max-width: 990px) {
+    .reserve-my-investment .offering-inline-buttons {
+        display: none;
+    }
+}
+
+.offering-tabs.stick .reserve-my-investment .offering-inline-buttons {
+    display: none;
+}
+
+.panel-flexible-inside .summary-row {
+    display: none;
+}
+
+.ttm-btn-color-dark {
+    background: #6bc048 !important;
+    border-color: #fff !important
+}
+
+/* ==========================================================================
+   Modern Design System Transformation
+   ========================================================================== */
+
+.modern-header {
+    background: var(--white);
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.modern-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modern-logo img {
+    height: 50px;
+}
+
+.modern-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+.modern-nav a {
+    color: var(--primary-color);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.modern-nav a:hover {
+    color: var(--accent-color);
+}
+
+.btn-invest {
+    background: #6bc048;
+    color: var(--white) !important;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    display: inline-block;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn-invest:hover {
+    background: #5eb13c;
+    transform: translateY(-2px);
+    text-decoration: none !important;
+}
+
+.cta-subtext {
+    display: block;
+    font-size: 11px;
+    color: var(--primary-color);
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.modern-hero {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.modern-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://manhattanstreetcapital.com/sites/default/files/images/gatc/hero/image3.jpg');
+    background-size: cover;
+    background-position: center;
+    transform: scaleX(-1);
+    z-index: -1;
+}
+
+.hero-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    text-align: left;
+}
+
+.hero-card h1 {
+    font-size: 38px;
+    line-height: 1.1;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    letter-spacing: -0.02em;
+}
+
+.hero-card p {
+    font-size: 17px;
+    color: var(--primary-color);
+    line-height: 1.4;
+    margin-bottom: 18px;
+    max-width: 100%;
+    opacity: 1;
+}
+
+.hero-card b {
+    font-weight: 800;
+}
+
+.hero-card .cta-area {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.hero-card .btn-invest {
+    width: auto;
+    padding: 12px 40px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .modern-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .modern-nav {
+        display: none;
+    }
+}
+
+/* Impact Section (Video + Text) */
+.impact-section {
+    background: var(--primary-color);
+    padding: 100px 0;
+    color: var(--white);
+    text-align: center;
+}
+
+.impact-section h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    color: var(--white);
+}
+
+.video-container {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.video-thumb-overlay {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.impact-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.impact-content p {
+    font-size: 21px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+    opacity: 1;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.impact-content h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.impact-section .btn-invest {
+    padding: 15px 45px;
+}
+
+.impact-section .cta-subtext {
+    color: var(--white);
+    opacity: 0.8;
+}
+
+/* Interactive Slider */
+.interactive-slider {
+    position: relative;
+    height: 650px;
+    overflow: hidden;
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.slider-container {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover !important;
+    background-position: center !important;
+    z-index: -1;
+}
+
+.slide.active {
+    transform: translateX(0);
+    z-index: 2;
+}
+
+.slide.prev-slide {
+    transform: translateX(-100%);
+    z-index: 1;
+}
+
+.slide-content {
+    max-width: 600px;
+    margin-left: 10%;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: all 0.8s ease-out 0.3s;
+}
+
+.slide.active .slide-content {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.slide-content h2 {
+    font-size: 38px;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.slide-content p {
+    font-size: 20px;
+    color: var(--primary-color);
+    line-height: 1.4;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.slide-content .btn-invest {
+    margin-top: 10px;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.slider-btn:hover {
+    background: var(--primary-color);
+}
+
+.slider-btn.prev {
+    left: 20px;
+}
+
+.slider-btn.next {
+    right: 20px;
+}
+
+@media (max-width: 991px) {
+    .slide-content {
+        margin-left: 5%;
+        max-width: 80%;
+    }
+}

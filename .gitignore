@@ -1,0 +1,7 @@
+.env
+.tmp/
+index_backup*.html
+style_pre_transformation.css
+*.jpg_demo
+temp_demo*.html
+brain/
